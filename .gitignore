@@ -1,0 +1,18 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# Vercel
+.vercel
+
+# Local environment and logs
+.env
+.env.*
+*.log
+
+# Dependency folders (not used by this static project)
+node_modules/

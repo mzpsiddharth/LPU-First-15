@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Map &amp; Classroom Finder — LPU First 15</title>
+  <meta name="description" content="Interactive LPU campus map: search buildings, hover for names, and use the classroom finder. Enter 34-501 to get Block 34, 5th floor, Room 501.">
+  <meta name="theme-color" content="#eaf4ff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"] },
+          colors: {
+            navy: { 950: "#061427", 900: "#0a1e3a", 800: "#123055", 700: "#1b406e" },
+            brand: { 50: "#eff6ff", 100: "#dceaff", 500: "#2f7cf6", 600: "#1f6feb", 700: "#155ed1" }
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/campus-map.js"></script>
+</head>
+<body data-page="map">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-bar">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/img/lpu-logo.svg" alt="" width="198" height="120">
+          <span class="brand-text">
+            <span class="brand-title">LPU First 15</span>
+            <span class="brand-sub">Freshers' Guide</span>
+          </span>
+        </a>
+        <nav class="desktop-nav" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="schedule.html">Induction Schedule</a>
+          <a class="nav-link is-active" href="map.html" aria-current="page">Campus Map</a>
+          <a class="nav-link" href="process.html">Reporting Guide</a>
+          <a class="nav-link" href="edurev.html">EDU-Revolution</a>
+          <a class="nav-link" href="support.html">Support &amp; Helpdesk</a>
+        </nav>
+        <div class="header-actions">
+          <a class="header-phone" href="tel:01824517170"><i data-feather="phone"></i><span>01824-517170</span></a>
+          <a class="btn btn-primary btn-sm header-cta" href="support.html">Get help <i data-feather="arrow-right"></i></a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu"><i data-feather="menu"></i></button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile" hidden>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="schedule.html">Induction Schedule</a>
+        <a class="nav-link is-active" href="map.html" aria-current="page">Campus Map</a>
+        <a class="nav-link" href="process.html">Reporting Guide</a>
+        <a class="nav-link" href="edurev.html">EDU-Revolution</a>
+        <a class="nav-link" href="support.html">Support &amp; Helpdesk</a>
+        <a class="mobile-phone" href="tel:01824517170"><i data-feather="phone-call"></i> Induction hotline: 01824-517170</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><i data-feather="chevron-right"></i><span>Campus Map</span>
+        </nav>
+        <span class="eyebrow eyebrow--light mt-4">Interactive campus map</span>
+        <h1>Find any building, block or classroom in seconds.</h1>
+        <p>Explore accurate building outlines and campus facilities in the map you created. Search locations, toggle map layers, and use the classroom finder to decode room numbers like <strong>34-501</strong>.</p>
+        <div class="hero-meta">
+          <span><i data-feather="layers"></i> Toggle map layers</span>
+          <span><i data-feather="search"></i> Search locations</span>
+          <span><i data-feather="navigation"></i> Classroom parser included</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section--tight campus-map-section" aria-label="Campus map and classroom finder">
+      <div class="campus-map-layout">
+        <div class="campus-map-main">
+          <div class="campus-map-heading">
+            <div>
+              <span class="eyebrow">Official map view</span>
+              <h2 class="h2 mt-1">Explore the LPU campus</h2>
+              <p class="small mt-1">Browse your mapped building outlines, hostels, amenities and campus areas directly in Google My Maps.</p>
+            </div>
+            <a class="btn btn-outline btn-sm" href="https://www.google.com/maps/d/viewer?mid=15eLzAj9aVMW5A8stumH4EzQ1BylHl8w" target="_blank" rel="noopener noreferrer">
+              <i data-feather="external-link"></i> Open full map
+            </a>
+          </div>
+
+          <div class="campus-embed-card">
+            <div class="campus-embed-toolbar">
+              <div class="campus-embed-title">
+                <span class="campus-embed-live-dot" aria-hidden="true"></span>
+                <span>Lovely Professional University · Phagwara</span>
+              </div>
+              <span class="tiny">Google My Maps</span>
+            </div>
+            <div class="campus-embed-frame">
+              <iframe
+                title="Interactive Lovely Professional University campus map"
+                src="https://www.google.com/maps/d/embed?mid=15eLzAj9aVMW5A8stumH4EzQ1BylHl8w&amp;ehbc=2E312F&amp;noprof=1"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <div class="campus-embed-footer">
+              <span><i data-feather="layers"></i> Toggle map layers to show or hide categories</span>
+              <a href="https://www.google.com/maps/d/viewer?mid=15eLzAj9aVMW5A8stumH4EzQ1BylHl8w" target="_blank" rel="noopener noreferrer">Open in Google Maps <i data-feather="arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <div class="callout mt-3">
+            <i data-feather="info"></i>
+            <span><strong>Tip:</strong> Use the search bar and layer list inside the map to find places. The embedded map is maintained in Google My Maps, so edits to that source map can appear here without rebuilding this website.</span>
+          </div>
+        </div>
+
+        <aside class="campus-map-sidebar stack">
+          <div class="card card-pad" id="finder">
+            <span class="eyebrow">Classroom finder</span>
+            <h2 class="h3 mt-1">Decode a room number</h2>
+            <p class="small mt-1">Enter a room such as <strong>34-501</strong> to decode its block, floor and room number. Then search for that block in the embedded map.</p>
+
+            <form id="finderForm" class="mt-3" novalidate>
+              <label class="flabel" for="roomInput">Block and room</label>
+              <div class="flex gap-2">
+                <input id="roomInput" class="field" type="text" inputmode="numeric" placeholder="34-501" autocomplete="off" aria-describedby="finderHelp finderResult">
+                <button class="btn btn-primary" type="submit" aria-label="Decode classroom number"><i data-feather="search"></i></button>
+              </div>
+              <p class="tiny mt-1" id="finderHelp">Example: 34-501 → Block 34, 5th floor, Room 501.</p>
+              <div class="finder-examples" aria-label="Example room numbers">
+                <span class="tiny">Try:</span>
+                <button class="example-chip" type="button" data-example="34-501">34-501</button>
+                <button class="example-chip" type="button" data-example="35-201">35-201</button>
+                <button class="example-chip" type="button" data-example="38-402">38-402</button>
+                <button class="example-chip" type="button" data-example="32-105">32-105</button>
+              </div>
+            </form>
+            <div class="finder-result" id="finderResult" aria-live="polite"></div>
+            <p class="tiny campus-finder-note"><i data-feather="info"></i> The embedded Google map runs separately from this page, so this finder cannot automatically highlight a block inside it. Use the map's own search after decoding the room.</p>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">Using the campus map</h3>
+            <ol class="campus-map-steps">
+              <li><span class="step-num">1</span><span><strong class="text-navy">Search</strong><br>Type a building or location name in the map's own search box.</span></li>
+              <li><span class="step-num">2</span><span><strong class="text-navy">Toggle layers</strong><br>Use the left panel to show or hide groups of places.</span></li>
+              <li><span class="step-num">3</span><span><strong class="text-navy">Select a feature</strong><br>Click a mapped shape or pin to see its saved details.</span></li>
+            </ol>
+            <a class="btn btn-soft btn-block mt-4" href="schedule.html"><i data-feather="calendar"></i> Find an induction venue</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container section--tight">
+      <div class="help-band">
+        <div class="help-band-inner">
+          <div>
+            <span class="eyebrow eyebrow--light">Lost on campus?</span>
+            <h2 class="mt-2">Ask a human. That is what the helpdesk is for.</h2>
+            <p>Call the induction hotline for reporting locations, or use the Support page for security, medical, hostel and mentor contacts.</p>
+          </div>
+          <div class="help-actions">
+            <a class="btn btn-primary" href="tel:01824517170"><i data-feather="phone-call"></i> 01824-517170</a>
+            <a class="btn btn-ghost" href="support.html"><i data-feather="life-buoy"></i> Support directory</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img class="brand-logo" src="assets/img/lpu-logo.svg" alt="" width="198" height="120">
+            <span class="brand-text">
+              <span class="brand-title">LPU First 15</span>
+              <span class="brand-sub">Freshers' Guide</span>
+            </span>
+          </a>
+          <p class="footer-about">A student-first onboarding companion for LPU Freshers 2026 — schedule, campus navigation, reporting help and the EDU-Revolution, all in one place.</p>
+          <span class="footer-badge"><i data-feather="map"></i> Google My Maps · interactive campus map</span>
+        </div>
+        <div>
+          <p class="footer-head">Explore</p>
+          <div class="footer-links">
+            <a class="footer-link" href="index.html">Home</a>
+            <a class="footer-link" href="schedule.html">Induction schedule</a>
+            <a class="footer-link" href="process.html">Reporting guide</a>
+            <a class="footer-link" href="edurev.html">EDU-Revolution</a>
+            <a class="footer-link" href="support.html">Support &amp; helpdesk</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-head">Map shortcuts</p>
+          <div class="footer-links">
+            <a class="footer-link" href="https://www.google.com/maps/d/viewer?mid=15eLzAj9aVMW5A8stumH4EzQ1BylHl8w" target="_blank" rel="noopener noreferrer">Open campus map</a>
+            <a class="footer-link" href="map.html#finder">Classroom finder</a>
+            <a class="footer-link" href="https://www.google.com/maps/d/viewer?mid=15eLzAj9aVMW5A8stumH4EzQ1BylHl8w" target="_blank" rel="noopener noreferrer">Find a building</a>
+            <a class="footer-link" href="https://www.google.com/maps/d/viewer?mid=15eLzAj9aVMW5A8stumH4EzQ1BylHl8w" target="_blank" rel="noopener noreferrer">Campus facilities</a>
+            <a class="footer-link" href="map.html#finder">Classroom finder</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-head">Emergency numbers</p>
+          <div class="footer-contact">
+            <a href="tel:01824517170"><i data-feather="phone"></i> 01824-517170 · Induction</a>
+            <a href="tel:01824444079"><i data-feather="activity"></i> 01824-444079 · Hospital</a>
+            <a href="tel:01824444095"><i data-feather="shield"></i> 01824-444095 · Security</a>
+            <a href="tel:18001374422"><i data-feather="life-buoy"></i> 1800-137-4422 · Toll-free</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> LPU First 15 · Built for LPU Freshers' Onboarding. An independent student guide — not an official Lovely Professional University website. Campus map data is maintained in Google My Maps.</p>
+        <a class="back-top" href="#main"><i data-feather="arrow-up"></i> Back to top</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LPU First 15 — Freshers' Onboarding &amp; Campus Guide</title>
+  <meta name="description" content="A five-step companion for LPU freshers: induction schedule, interactive campus map, classroom finder, reporting checklist, EDU-Revolution and 24/7 helpdesk contacts.">
+  <meta name="theme-color" content="#eaf4ff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"] },
+          colors: {
+            navy: { 950: "#061427", 900: "#0a1e3a", 800: "#123055", 700: "#1b406e" },
+            brand: { 50: "#eff6ff", 100: "#dceaff", 500: "#2f7cf6", 600: "#1f6feb", 700: "#155ed1" }
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-bar">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/img/lpu-logo.svg" alt="" width="198" height="120">
+          <span class="brand-text">
+            <span class="brand-title">LPU First 15</span>
+            <span class="brand-sub">Freshers' Guide</span>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary">
+          <a class="nav-link is-active" href="index.html" aria-current="page">Home</a>
+          <a class="nav-link" href="schedule.html">Induction Schedule</a>
+          <a class="nav-link" href="map.html">Campus Map</a>
+          <a class="nav-link" href="process.html">Reporting Guide</a>
+          <a class="nav-link" href="edurev.html">EDU-Revolution</a>
+          <a class="nav-link" href="support.html">Support &amp; Helpdesk</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="header-phone" href="tel:01824517170">
+            <i data-feather="phone"></i><span>01824-517170</span>
+          </a>
+          <a class="btn btn-primary btn-sm header-cta" href="support.html">Get help <i data-feather="arrow-right"></i></a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile" hidden>
+        <a class="nav-link is-active" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="schedule.html">Induction Schedule</a>
+        <a class="nav-link" href="map.html">Campus Map</a>
+        <a class="nav-link" href="process.html">Reporting Guide</a>
+        <a class="nav-link" href="edurev.html">EDU-Revolution</a>
+        <a class="nav-link" href="support.html">Support &amp; Helpdesk</a>
+        <a class="mobile-phone" href="tel:01824517170"><i data-feather="phone-call"></i> Induction hotline: 01824-517170</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="eyebrow eyebrow--light">LPU · Freshmen Induction &amp; Career Pathways 2026</span>
+          <h1 class="display">
+            Welcome to LPU Freshers' Onboarding.
+            <span class="accent">Navigate your first 15 days stress-free.</span>
+          </h1>
+          <p class="hero-lede">
+            Everything you need from the moment you reach the campus gate — reporting steps,
+            day-wise induction sessions, an interactive map, classroom directions and the right
+            helpline when you need a human. Built for the Class of 2026.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="schedule.html">
+              <i data-feather="calendar"></i> View 15-day schedule
+            </a>
+            <a class="btn btn-ghost" href="map.html">
+              <i data-feather="map"></i> Open campus map
+            </a>
+          </div>
+          <div class="hero-meta">
+            <span><i data-feather="map-pin"></i> Baldev Raj Mittal Unipolis reporting</span>
+            <span><i data-feather="clock"></i> Helpline 09:00–17:00</span>
+            <span><i data-feather="shield"></i> 24-hour pick-up support</span>
+          </div>
+        </div>
+
+        <aside class="glass-card reveal" aria-label="Your onboarding progress at a glance">
+          <div class="gc-head">
+            <span class="gc-title">Your first 15 days</span>
+            <span class="gc-badge">Class of 2026</span>
+          </div>
+          <div class="hero-steps">
+            <div class="hero-step"><span class="dot dot--done"></span> Pre-arrival formalities <small>Before you travel</small></div>
+            <div class="hero-step"><span class="dot dot--now"></span> Report at Unipolis <small>Reporting day</small></div>
+            <div class="hero-step"><span class="dot"></span> Induction days 1–3 <small>Meet your school</small></div>
+            <div class="hero-step"><span class="dot"></span> Days 4–15 setup <small>UMS, mess, library</small></div>
+            <div class="hero-step"><span class="dot"></span> Classes begin <small>As per timetable</small></div>
+          </div>
+          <div class="gc-foot">
+            <div class="gc-stat"><strong>8</strong><span>Reporting steps</span></div>
+            <div class="gc-stat"><strong>Campus</strong><span>Interactive map</span></div>
+            <div class="gc-stat"><strong>24/7</strong><span>Helpdesk</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- QUICK ACTIONS -->
+    <section class="container mt-6 relative z-10" aria-labelledby="quick-actions-title">
+      <div class="card card-pad">
+        <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
+          <div>
+            <span class="eyebrow">Start here</span>
+            <h2 class="h3 mt-1" id="quick-actions-title">Your four most-used tools</h2>
+          </div>
+          <p class="tiny">Works on phone, tablet and desktop. No login required.</p>
+        </div>
+        <div class="grid-4 gap-lg">
+          <a class="action-card" href="map.html">
+            <span class="action-icon"><i data-feather="map"></i></span>
+            <span>
+              <h3>Campus Map</h3>
+              <p>Explore mapped buildings, hostels, parking and campus facilities.</p>
+            </span>
+            <span class="action-go"><i data-feather="arrow-up-right"></i></span>
+          </a>
+          <a class="action-card" href="map.html#finder">
+            <span class="action-icon action-icon--teal"><i data-feather="navigation"></i></span>
+            <span>
+              <h3>Classroom Finder</h3>
+              <p>Enter <strong>34-501</strong> and get block, floor and room in one line.</p>
+            </span>
+            <span class="action-go"><i data-feather="arrow-up-right"></i></span>
+          </a>
+          <a class="action-card" href="schedule.html">
+            <span class="action-icon action-icon--violet"><i data-feather="calendar"></i></span>
+            <span>
+              <h3>Induction Schedule</h3>
+              <p>Day-wise timings, venues and the Days 4–15 setup checklist.</p>
+            </span>
+            <span class="action-go"><i data-feather="arrow-up-right"></i></span>
+          </a>
+          <a class="action-card" href="edurev.html">
+            <span class="action-icon action-icon--amber"><i data-feather="zap"></i></span>
+            <span>
+              <h3>EDU-Revolution</h3>
+              <p>Explore the 50-50-50 formula and earn credit beyond the classroom.</p>
+            </span>
+            <span class="action-go"><i data-feather="arrow-up-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section container" aria-labelledby="roadmap-title">
+      <div class="section-head section-head--split">
+        <div>
+          <span class="eyebrow">The 15-day roadmap</span>
+          <h2 class="h2 mt-1" id="roadmap-title">From arrival to your first class</h2>
+          <p>Five stages, one page each. Tap a stage to jump straight to the details.</p>
+        </div>
+        <a class="link-arrow" href="process.html">Full reporting guide <i data-feather="arrow-right"></i></a>
+      </div>
+
+      <ol class="grid-4 gap-lg" style="list-style: none">
+        <li class="card card-pad card-hover reveal">
+          <div class="flex items-center justify-between">
+            <span class="pill"><i data-feather="clipboard"></i> Stage 0</span>
+            <span class="mono tiny">Before travel</span>
+          </div>
+          <h3 class="h3 mt-3">Pre-arrival formalities</h3>
+          <p class="small mt-1">Upload documents, book hostel &amp; mess, submit uniform size and clear fees on LPU Admit.</p>
+          <a class="link-arrow mt-3" href="process.html#before">Open checklist <i data-feather="arrow-right"></i></a>
+        </li>
+        <li class="card card-pad card-hover reveal reveal-delay-1">
+          <div class="flex items-center justify-between">
+            <span class="pill pill--teal"><i data-feather="log-in"></i> Reporting day</span>
+            <span class="mono tiny">09:00–17:00</span>
+          </div>
+          <h3 class="h3 mt-3">Register at Unipolis</h3>
+          <p class="small mt-1">QR scan, induction sheet, document verification, biometrics, fees, uniform and UMS activation.</p>
+          <a class="link-arrow mt-3" href="process.html#on-arrival">See 8 steps <i data-feather="arrow-right"></i></a>
+        </li>
+        <li class="card card-pad card-hover reveal reveal-delay-2">
+          <div class="flex items-center justify-between">
+            <span class="pill pill--violet"><i data-feather="users"></i> Days 1–3</span>
+            <span class="mono tiny">Induction</span>
+          </div>
+          <h3 class="h3 mt-3">Meet your school</h3>
+          <p class="small mt-1">Leadership sessions, school connect, campus tour, sports, talent search and club registrations.</p>
+          <a class="link-arrow mt-3" href="schedule.html">View day-wise plan <i data-feather="arrow-right"></i></a>
+        </li>
+        <li class="card card-pad card-hover reveal reveal-delay-3">
+          <div class="flex items-center justify-between">
+            <span class="pill pill--amber"><i data-feather="check-square"></i> Days 4–15</span>
+            <span class="mono tiny">Setup</span>
+          </div>
+          <h3 class="h3 mt-3">Get class-ready</h3>
+          <p class="small mt-1">Sync your UMS timetable, activate the mess pass, generate a library card and meet your mentor.</p>
+          <a class="link-arrow mt-3" href="schedule.html#days-4-15">Open setup list <i data-feather="arrow-right"></i></a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PACKING -->
+    <section class="section bg-soft" id="packing" aria-labelledby="packing-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <span class="eyebrow">What to bring</span>
+            <h2 class="h2 mt-1" id="packing-title">The pre-arrival packing pack</h2>
+            <p>Pack once, tick it off, and arrive with the right documents in a transparent folder. Your progress is saved on this device.</p>
+          </div>
+          <button class="btn btn-outline btn-sm no-print" type="button" data-print>
+            <i data-feather="printer"></i> Print checklist
+          </button>
+        </div>
+
+        <div class="split split--wide">
+          <div class="card card-pad" data-checklist-card>
+            <div class="seg" role="tablist" aria-label="Packing checklist categories" data-tabs>
+              <button role="tab" id="tab-docs" aria-controls="panel-docs" aria-selected="true">
+                <i data-feather="file-text" class="inline-block w-4 h-4 mr-1 align-[-2px]"></i> Documents
+              </button>
+              <button role="tab" id="tab-essentials" aria-controls="panel-essentials" aria-selected="false">
+                <i data-feather="package" class="inline-block w-4 h-4 mr-1 align-[-2px]"></i> Essentials
+              </button>
+              <button role="tab" id="tab-prohibited" aria-controls="panel-prohibited" aria-selected="false">
+                <i data-feather="slash" class="inline-block w-4 h-4 mr-1 align-[-2px]"></i> Prohibited
+              </button>
+            </div>
+
+            <div class="tab-panel" id="panel-docs" role="tabpanel" aria-labelledby="tab-docs">
+              <div class="callout mt-4">
+                <i data-feather="info"></i>
+                <span>Carry <strong>originals plus one photocopy</strong> of every document. Keep them in a transparent folder for quick verification at Unipolis.</span>
+              </div>
+
+              <h3 class="h3 mt-4 mb-2">Required documents</h3>
+              <div class="check-list" data-store="packing-docs" data-progress-label="packed">
+                <label class="check-row">
+                  <input type="checkbox" data-key="class10">
+                  <span class="check-text"><strong>Class 10 certificate</strong><small>Original + photocopy</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="class12">
+                  <span class="check-text"><strong>Class 12 certificate</strong><small>Original + photocopy</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="graduation">
+                  <span class="check-text"><strong>Graduation certificate</strong><small>If applicable</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="character">
+                  <span class="check-text"><strong>Character / school leaving / transfer certificate</strong><small>Any one, as applicable</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="entrance">
+                  <span class="check-text"><strong>Entrance test rank or score card</strong><small>LPUNEST / applicable exam</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="photos">
+                  <span class="check-text"><strong>Three passport-size photographs</strong><small>Recent, same as portal photo</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="residence">
+                  <span class="check-text"><strong>Proof of residence</strong><small>Address proof</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="aadhaar">
+                  <span class="check-text"><strong>Aadhaar card — student and parents</strong><small>Photocopies accepted for parents</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="antiragging">
+                  <span class="check-text"><strong>Self-attested anti-ragging affidavit</strong><small>Signed by student and parents</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="income">
+                  <span class="check-text"><strong>Income affidavit</strong><small>For scholarship / fee records</small></span>
+                </label>
+              </div>
+
+              <div class="progress-block">
+                <div class="progress"><span data-progress-bar="packing-docs"></span></div>
+                <span class="progress-text" data-progress-text="packing-docs">0 of 10 complete</span>
+              </div>
+
+              <details class="acc mt-4">
+                <summary>
+                  <span class="acc-ico"><i data-feather="plus-circle"></i></span>
+                  Additional certificates (if applicable)
+                  <span class="chev"><i data-feather="chevron-down"></i></span>
+                </summary>
+                <div class="acc-body">
+                  <ul class="list-check list-check--plain">
+                    <li>Defence document for scholarship or eligibility</li>
+                    <li>Domicile certificate (JK migrant, North-East applicants)</li>
+                    <li>Gap certificate</li>
+                    <li>Interview result (MBA and M.A. English)</li>
+                    <li>Medical certificate (Physical Education programmes)</li>
+                    <li>Migration certificate (part-time programmes)</li>
+                    <li>No objection certificate (part-time Ph.D.)</li>
+                    <li>PCI undertaking (M.Pharm.)</li>
+                    <li>Reserved category certificate</li>
+                  </ul>
+                  <p class="mt-3"><strong>International students:</strong> passport, visa (with issue and expiry dates), FRRO or police verification, health insurance, offer letter and acceptance letter.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="tab-panel" id="panel-essentials" role="tabpanel" aria-labelledby="tab-essentials" hidden>
+              <div class="callout callout--teal mt-4">
+                <i data-feather="home"></i>
+                <span><strong>Already in your room:</strong> bed, almirah, study table, chair, and a cooler or AC as opted. Leave the furniture at home.</span>
+              </div>
+
+              <h3 class="h3 mt-4 mb-2">Essentials to pack</h3>
+              <div class="check-list" data-store="packing-essentials" data-progress-label="packed">
+                <label class="check-row">
+                  <input type="checkbox" data-key="laptop">
+                  <span class="check-text"><strong>Laptop, phone and chargers</strong><small>Plus any device your programme needs</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="bedsheets">
+                  <span class="check-text"><strong>Bed sheets, top sheet or light blanket, pillows</strong><small>Two sets are easier than laundry day</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="toiletries">
+                  <span class="check-text"><strong>Bucket, mug, toiletries and towels</strong><small>Refill at Uni-Mall if you run short</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="winter">
+                  <span class="check-text"><strong>Winter clothing for October–February</strong><small>Woollens, jacket, socks, closed shoes</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="summer">
+                  <span class="check-text"><strong>Summer clothing and footwear</strong><small>Formal shoes, slippers, sports shoes</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="lock">
+                  <span class="check-text"><strong>A good lock with spare keys</strong><small>Keep one spare with the warden</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="medicines">
+                  <span class="check-text"><strong>Prescription medicines</strong><small>Carry a valid doctor's prescription</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="ethnic">
+                  <span class="check-text"><strong>One traditional or ethnic outfit</strong><small>For cultural events and Induction Carnival</small></span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" data-key="optional">
+                  <span class="check-text"><strong>Optional comfort kit</strong><small>Umbrella, detergent, sewing kit, first-aid, sports kit</small></span>
+                </label>
+              </div>
+
+              <div class="progress-block">
+                <div class="progress"><span data-progress-bar="packing-essentials"></span></div>
+                <span class="progress-text" data-progress-text="packing-essentials">0 of 9 complete</span>
+              </div>
+
+              <h4 class="h3 mt-5 mb-2" style="font-size: 0.95rem">Punjab weather, in one table</h4>
+              <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm" style="border-collapse: collapse">
+                  <thead>
+                    <tr style="border-bottom: 1px solid var(--line); color: #5b6c82">
+                      <th class="py-2 pr-3 font-semibold">Months</th>
+                      <th class="py-2 pr-3 font-semibold">Weather</th>
+                      <th class="py-2 pr-3 font-semibold">Temperature</th>
+                      <th class="py-2 font-semibold">Pack</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom: 1px solid #eef3f9">
+                      <td class="py-2 pr-3">March–July</td>
+                      <td class="py-2 pr-3">Hot and dry</td>
+                      <td class="py-2 pr-3 mono">40–45°C</td>
+                      <td class="py-2">Light cotton</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eef3f9">
+                      <td class="py-2 pr-3">August–October</td>
+                      <td class="py-2 pr-3">Hot and humid</td>
+                      <td class="py-2 pr-3 mono">30–35°C</td>
+                      <td class="py-2">Light cotton</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 pr-3">November–February</td>
+                      <td class="py-2 pr-3">Cold and dry</td>
+                      <td class="py-2 pr-3 mono">5–13°C</td>
+                      <td class="py-2">Warm layers, blanket, quilt, closed shoes</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="tiny mt-2">Winter usually begins around October–November. In-house stores at Uni-Mall stock everyday extras.</p>
+            </div>
+
+            <div class="tab-panel" id="panel-prohibited" role="tabpanel" aria-labelledby="tab-prohibited" hidden>
+              <div class="callout callout--danger mt-4">
+                <i data-feather="alert-triangle"></i>
+                <span><strong>Leave these at home.</strong> Heavy appliances are not allowed in hostel rooms. Refrigerators and induction plates are permitted only in apartments.</span>
+              </div>
+
+              <div class="mt-4">
+                <details class="acc acc--danger" open>
+                  <summary>
+                    <span class="acc-ico"><i data-feather="zap-off"></i></span>
+                    Electrical &amp; heavy appliances (10)
+                    <span class="chev"><i data-feather="chevron-down"></i></span>
+                  </summary>
+                  <div class="acc-body">
+                    <div class="grid-2">
+                      <ul class="list-check list-check--danger">
+                        <li>Television</li>
+                        <li>Toaster</li>
+                        <li>Mixer</li>
+                        <li>Juicer</li>
+                        <li>Refrigerator <span class="tiny">(apartments only)</span></li>
+                      </ul>
+                      <ul class="list-check list-check--danger">
+                        <li>Washing machine</li>
+                        <li>Oven</li>
+                        <li>Immersion rod</li>
+                        <li>Induction plate <span class="tiny">(apartments only)</span></li>
+                        <li>Electric cooker</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+
+                <details class="acc acc--danger">
+                  <summary>
+                    <span class="acc-ico"><i data-feather="shield-off"></i></span>
+                    Other campus prohibitions
+                    <span class="chev"><i data-feather="chevron-down"></i></span>
+                  </summary>
+                  <div class="acc-body">
+                    <ul class="list-check list-check--danger">
+                      <li>Alcohol, drugs, smoking or any intoxicant — zero tolerance.</li>
+                      <li>Ragging, discrimination and sexual harassment — strictly punishable.</li>
+                      <li>Non-vegetarian food inside hostels; the campus is vegetarian.</li>
+                      <li>Pasting posters on walls or furniture, or burning candles and dhoop.</li>
+                      <li>Leaving the campus without permission or a gate pass.</li>
+                    </ul>
+                  </div>
+                </details>
+
+                <details class="acc">
+                  <summary>
+                    <span class="acc-ico"><i data-feather="key"></i></span>
+                    Hostel room handover rules
+                    <span class="chev"><i data-feather="chevron-down"></i></span>
+                  </summary>
+                  <div class="acc-body">
+                    <ul class="list-check list-check--plain">
+                      <li>Report to your warden and take charge of the allotted room.</li>
+                      <li>Check the furniture and fittings; report issues immediately.</li>
+                      <li>Buy a lock with multiple keys and hand a spare to the warden.</li>
+                      <li>Note the electric meter reading on the day before reporting.</li>
+                      <li>Raise complaints through the Relationship Management System (RMS).</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+
+          <aside class="stack">
+            <div class="card card-pad">
+              <span class="eyebrow">Before you pack</span>
+              <h3 class="h3 mt-1">Three things freshers forget</h3>
+              <ul class="list-check mt-3">
+                <li><strong>A transparent document folder.</strong> Verification is much faster when originals are together.</li>
+                <li><strong>Your uniform size on LPU Admit.</strong> Without it, uniform collection at Unipolis gets delayed.</li>
+                <li><strong>One ethnic outfit.</strong> You will want it for the Induction Carnival and cultural events.</li>
+              </ul>
+              <a class="btn btn-soft btn-block mt-4" href="process.html#before"><i data-feather="clipboard"></i> Open pre-arrival checklist</a>
+            </div>
+
+            <div class="card card-pad">
+              <div class="flex items-start gap-3">
+                <span class="action-icon action-icon--amber"><i data-feather="sun"></i></span>
+                <div>
+                  <h3 class="h3">Winter is coming</h3>
+                  <p class="small mt-1">October–February in Punjab drops to 5–13°C. Carry warm layers, a quilt and closed shoes; buy the bulky items locally if luggage is tight.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-pad">
+              <span class="eyebrow">Need a hand?</span>
+              <h3 class="h3 mt-1">Induction hotline</h3>
+              <p class="small mt-1">For reporting, documents, hostel or induction questions.</p>
+              <a class="btn btn-primary btn-block mt-3" href="tel:01824517170"><i data-feather="phone"></i> 01824-517170</a>
+              <a class="link-arrow mt-3" href="support.html">All helplines and mentors <i data-feather="arrow-right"></i></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- KNOW BEFORE YOU GO -->
+    <section class="section container" aria-labelledby="know-title">
+      <div class="section-head">
+        <span class="eyebrow">Settle in faster</span>
+        <h2 class="h2" id="know-title">Know before you go</h2>
+        <p>The small things that make the first fortnight feel normal.</p>
+      </div>
+      <div class="grid-3 gap-lg">
+        <article class="card card-pad card-hover reveal">
+          <span class="action-icon"><i data-feather="credit-card"></i></span>
+          <h3 class="h3 mt-3">Your ID card is your campus key</h3>
+          <p class="small mt-1">Wear it on campus. Biometrics are captured at Unipolis; the help desk tells you the collection date and venue.</p>
+        </article>
+        <article class="card card-pad card-hover reveal reveal-delay-1">
+          <span class="action-icon action-icon--teal"><i data-feather="smartphone"></i></span>
+          <h3 class="h3 mt-3">UMS + LPUTouch = your daily dashboard</h3>
+          <p class="small mt-1">Timetable, attendance, results, leave requests and messages all live in UMS. Never share your login with anyone.</p>
+        </article>
+        <article class="card card-pad card-hover reveal reveal-delay-2">
+          <span class="action-icon action-icon--violet"><i data-feather="heart"></i></span>
+          <h3 class="h3 mt-3">Homesick? You are not alone</h3>
+          <p class="small mt-1">Visit the Department of Counseling &amp; Happiness in Block 8, Room 208, or book a counselor through UMS → Health Services.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EMERGENCY -->
+    <section class="container section--tight" aria-labelledby="emergency-title">
+      <div class="help-band">
+        <div class="help-band-inner">
+          <div>
+            <span class="eyebrow eyebrow--light">Emergency helpline</span>
+            <h2 id="emergency-title" class="mt-2">One number for induction. One campus that has your back.</h2>
+            <p>Save these before you travel. For medical emergencies call the hospital; for safety, use the 24×7 security desk.</p>
+          </div>
+          <div class="help-actions">
+            <a class="btn btn-primary" href="tel:01824517170"><i data-feather="phone-call"></i> Induction hotline 01824-517170</a>
+            <a class="btn btn-ghost" href="support.html"><i data-feather="life-buoy"></i> All contacts</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img class="brand-logo" src="assets/img/lpu-logo.svg" alt="" width="198" height="120">
+            <span class="brand-text">
+              <span class="brand-title">LPU First 15</span>
+              <span class="brand-sub">Freshers' Guide</span>
+            </span>
+          </a>
+          <p class="footer-about">A student-first onboarding companion for LPU Freshers 2026 — schedule, campus navigation, reporting help and the EDU-Revolution, all in one place.</p>
+          <span class="footer-badge"><i data-feather="check-circle"></i> Responsive · Accessible · Offline-friendly checklists</span>
+        </div>
+        <div>
+          <p class="footer-head">Explore</p>
+          <div class="footer-links">
+            <a class="footer-link" href="schedule.html">Induction schedule</a>
+            <a class="footer-link" href="map.html">Campus map &amp; finder</a>
+            <a class="footer-link" href="process.html">Reporting guide</a>
+            <a class="footer-link" href="edurev.html">EDU-Revolution</a>
+            <a class="footer-link" href="support.html">Support &amp; helpdesk</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-head">Help &amp; safety</p>
+          <div class="footer-links">
+            <a class="footer-link" href="support.html#directory">Contact directory</a>
+            <a class="footer-link" href="support.html#mentors">Faculty mentors</a>
+            <a class="footer-link" href="support.html#feedback">Feedback form</a>
+            <a class="footer-link" href="schedule.html#days-4-15">Days 4–15 checklist</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-head">Emergency numbers</p>
+          <div class="footer-contact">
+            <a href="tel:01824517170"><i data-feather="phone"></i> 01824-517170 · Induction</a>
+            <a href="tel:01824444079"><i data-feather="activity"></i> 01824-444079 · Hospital</a>
+            <a href="tel:01824444095"><i data-feather="shield"></i> 01824-444095 · Security</a>
+            <a href="tel:18001374422"><i data-feather="life-buoy"></i> 1800-137-4422 · Toll-free</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> LPU First 15 · Built for LPU Freshers' Onboarding. An independent student guide — not an official Lovely Professional University website. Always confirm dates with LPU Admit and your Induction Sheet.</p>
+        <a class="back-top" href="#main"><i data-feather="arrow-up"></i> Back to top</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

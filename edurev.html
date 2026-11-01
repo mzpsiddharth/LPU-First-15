@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EDU-Revolution Portal — LPU First 15</title>
+  <meta name="description" content="LPU EDU-Revolution 2026: the 50-50-50 formula, four pillars, all nine nomination categories, and the step-by-step UMS → LMS application guide. Assistance at Block 27, Room 102.">
+  <meta name="theme-color" content="#eaf4ff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"] },
+          colors: {
+            navy: { 950: "#061427", 900: "#0a1e3a", 800: "#123055", 700: "#1b406e" },
+            brand: { 50: "#eff6ff", 100: "#dceaff", 500: "#2f7cf6", 600: "#1f6feb", 700: "#155ed1" }
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/edurev.js"></script>
+</head>
+<body data-page="edurev">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-bar">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/img/lpu-logo.svg" alt="" width="198" height="120">
+          <span class="brand-text">
+            <span class="brand-title">LPU First 15</span>
+            <span class="brand-sub">Freshers' Guide</span>
+          </span>
+        </a>
+        <nav class="desktop-nav" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="schedule.html">Induction Schedule</a>
+          <a class="nav-link" href="map.html">Campus Map</a>
+          <a class="nav-link" href="process.html">Reporting Guide</a>
+          <a class="nav-link is-active" href="edurev.html" aria-current="page">EDU-Revolution</a>
+          <a class="nav-link" href="support.html">Support &amp; Helpdesk</a>
+        </nav>
+        <div class="header-actions">
+          <a class="header-phone" href="tel:01824517170"><i data-feather="phone"></i><span>01824-517170</span></a>
+          <a class="btn btn-primary btn-sm header-cta" href="support.html">Get help <i data-feather="arrow-right"></i></a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu"><i data-feather="menu"></i></button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile" hidden>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="schedule.html">Induction Schedule</a>
+        <a class="nav-link" href="map.html">Campus Map</a>
+        <a class="nav-link" href="process.html">Reporting Guide</a>
+        <a class="nav-link is-active" href="edurev.html" aria-current="page">EDU-Revolution</a>
+        <a class="nav-link" href="support.html">Support &amp; Helpdesk</a>
+        <a class="mobile-phone" href="tel:01824517170"><i data-feather="phone-call"></i> Induction hotline: 01824-517170</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="eyebrow eyebrow--light">EDU-Revolution · 25th Academic Session</span>
+          <h1 class="display">
+            Your ideas. Your interface.
+            <span class="accent">Your EDU-Revolution.</span>
+          </h1>
+          <p class="hero-lede">
+            An innovative, student-centric framework that changes how achievements are recognised and rewarded.
+            Gamified learning, real-world outcomes and student empowerment — built by the students, for the students.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#formula"><i data-feather="pie-chart"></i> Explore the 50-50-50 formula</a>
+            <a class="btn btn-ghost" href="#portal-guide"><i data-feather="list"></i> How to apply</a>
+          </div>
+          <div class="hero-meta">
+            <span><i data-feather="award"></i> Course exemption &amp; grade upgradation</span>
+            <span><i data-feather="trending-up"></i> Revenue pathways</span>
+            <span><i data-feather="users"></i> Students in decision making</span>
+          </div>
+        </div>
+
+        <aside class="glass-card" aria-label="The 50-50-50 formula at a glance">
+          <div class="gc-head">
+            <span class="gc-title">The 50-50-50 formula</span>
+            <span class="gc-badge">25th session</span>
+          </div>
+          <div class="mt-4" style="display: grid; gap: 0.85rem">
+            <div>
+              <div class="flex items-center justify-between text-sm" style="color: #cfe2f8"><span>Attendance outside the classroom</span><strong style="color:#fff">50%</strong></div>
+              <div class="progress mt-1" style="background: rgba(255,255,255,.14)"><span style="width: 50%; background: linear-gradient(90deg,#5b9dff,#8fe3d4)"></span></div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between text-sm" style="color: #cfe2f8"><span>Learning outside the classroom</span><strong style="color:#fff">50%</strong></div>
+              <div class="progress mt-1" style="background: rgba(255,255,255,.14)"><span style="width: 50%; background: linear-gradient(90deg,#8ec5ff,#c9b4ff)"></span></div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between text-sm" style="color: #cfe2f8"><span>Grading from real-world outcomes</span><strong style="color:#fff">50%</strong></div>
+              <div class="progress mt-1" style="background: rgba(255,255,255,.14)"><span style="width: 50%; background: linear-gradient(90deg,#6adfa9,#5b9dff)"></span></div>
+            </div>
+          </div>
+          <div class="gc-foot">
+            <div class="gc-stat"><strong>9</strong><span>Categories</span></div>
+            <div class="gc-stat"><strong>4</strong><span>Pillars</span></div>
+            <div class="gc-stat"><strong>7</strong><span>Portal steps</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container section--tight">
+      <div class="callout callout--teal">
+        <i data-feather="zap"></i>
+        <span><strong>New to EDU-Revolution?</strong> Start with one small, provable activity — a MOOC certificate, a club role or a real project. Build your confidence, then scale to internships and revenue work.</span>
+      </div>
+    </section>
+
+    <!-- 50-50-50 -->
+    <section class="section container" id="formula" aria-labelledby="formula-title">
+      <div class="section-head">
+        <span class="eyebrow">Interactive breakdown</span>
+        <h2 class="h2" id="formula-title">One formula, three shifts</h2>
+        <p>The 50-50-50 formula moves half of the learning experience outside the classroom and ties grading to things you can show, ship or sell. Tap a card to see what it unlocks.</p>
+      </div>
+
+      <div data-tabs>
+        <div class="formula-wrap">
+          <div class="formula-visual reveal">
+            <div class="formula-total">
+              <div class="big-fifty">50<span>%</span></div>
+              <p><strong>Three commitments.</strong> Not three separate targets — one integrated model where activity, learning and outcomes reinforce each other.</p>
+            </div>
+
+            <div class="formula-bars">
+              <div class="formula-bar">
+                <div class="fb-top"><span>Attendance</span><strong>50% outside class</strong></div>
+                <div class="fb-track"><div class="fb-fill"></div></div>
+              </div>
+              <div class="formula-bar">
+                <div class="fb-top"><span>Learning</span><strong>50% outside class</strong></div>
+                <div class="fb-track"><div class="fb-fill"></div></div>
+              </div>
+              <div class="formula-bar">
+                <div class="fb-top"><span>Grading</span><strong>50% real outcomes</strong></div>
+                <div class="fb-track"><div class="fb-fill"></div></div>
+              </div>
+            </div>
+
+            <p class="formula-note">Every nomination is reviewed through UMS → LMS. Approvals may sit with a category in-charge or the standing committee; keep proofs clear and current.</p>
+          </div>
+
+          <div>
+            <div class="formula-tabs" role="tablist" aria-label="50-50-50 formula components">
+              <button class="formula-tab" type="button" role="tab" id="tab-f-att" aria-controls="formula-attendance" aria-selected="true">
+                <span class="ft-num">50</span>
+                <span class="ft-label"><strong>Attendance outside the classroom</strong><small>Activity counts toward attendance flexibility</small></span>
+              </button>
+              <button class="formula-tab" type="button" role="tab" id="tab-f-learn" aria-controls="formula-learning" aria-selected="false">
+                <span class="ft-num">50</span>
+                <span class="ft-label"><strong>Learning outside the classroom</strong><small>Hands-on engagement, not passive screen time</small></span>
+              </button>
+              <button class="formula-tab" type="button" role="tab" id="tab-f-grade" aria-controls="formula-grading" aria-selected="false">
+                <span class="ft-num">50</span>
+                <span class="ft-label"><strong>Grading from real-world outcomes</strong><small>Projects, clients and certifications carry weight</small></span>
+              </button>
+            </div>
+
+            <div class="tab-panel formula-panel" id="formula-attendance" role="tabpanel" aria-labelledby="tab-f-att" tabindex="0">
+              <div class="ring-row">
+                <div class="ring" aria-hidden="true"><span>50%</span></div>
+                <div>
+                  <h3>Attendance beyond the roll call</h3>
+                  <p class="small mt-1">Recognised activity outside the classroom can support attendance relaxation and duty leaves.</p>
+                </div>
+              </div>
+              <ul class="list-check list-check--plain">
+                <li>Hackathons, technical competitions and certified workshops.</li>
+                <li>Club, society and community-service responsibilities.</li>
+                <li>Approved internships, field work and industry visits.</li>
+              </ul>
+              <div class="cp-callout"><strong>Reality check:</strong> this is not a free pass. Submit the activity through EDU-Revolution and get it approved before claiming relaxation. Scheduled classes still need a valid reason.</div>
+            </div>
+
+            <div class="tab-panel formula-panel" id="formula-learning" role="tabpanel" aria-labelledby="tab-f-learn" tabindex="0" hidden>
+              <div class="ring-row">
+                <div class="ring" aria-hidden="true"><span>50%</span></div>
+                <div>
+                  <h3>Half your learning happens by doing</h3>
+                  <p class="small mt-1">Hands-on engagement, technical competitions, hackathons and certifications replace passive revision.</p>
+                </div>
+              </div>
+              <ul class="list-check list-check--plain">
+                <li>Build a project that solves a real problem, not a tutorial clone.</li>
+                <li>Use NPTEL, SWAYAM or MOOC courses to fill a specific skill gap.</li>
+                <li>Learn from a paid internship, freelance brief or startup sprint.</li>
+              </ul>
+              <div class="cp-callout"><strong>Where to start:</strong> UMS → LMS → EDU-Revolution lists expert-defined options for your courses. You can also use the “Any Other” custom application route.</div>
+            </div>
+
+            <div class="tab-panel formula-panel" id="formula-grading" role="tabpanel" aria-labelledby="tab-f-grade" tabindex="0" hidden>
+              <div class="ring-row">
+                <div class="ring" aria-hidden="true"><span>50%</span></div>
+                <div>
+                  <h3>Outcomes that speak for themselves</h3>
+                  <p class="small mt-1">Grading can reflect real-world outcomes — shipped projects, client work, research and certifications.</p>
+                </div>
+              </div>
+              <ul class="list-check list-check--plain">
+                <li>Grade upgradation in core or non-core courses.</li>
+                <li>Course exemption through Recognition of Prior Learning (RPL).</li>
+                <li>Value addition on your academic transcript.</li>
+              </ul>
+              <div class="cp-callout"><strong>Proof matters:</strong> a live URL, GitHub repository, client testimonial or verified certificate is stronger than a description. Upload evidence at the draft stage.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 PILLARS -->
+    <section class="section bg-soft" aria-labelledby="pillars-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">The four pillars</span>
+          <h2 class="h2" id="pillars-title">What EDU-Revolution is built on</h2>
+          <p>Four connected promises: learn by doing, earn while learning, choose a career path, and help decide how the university works.</p>
+        </div>
+
+        <div class="grid-2 gap-lg">
+          <article class="pillar-card reveal">
+            <span class="p-num">Pillar 01</span>
+            <span class="pillar-icon"><i data-feather="zap"></i></span>
+            <h3>Gamified Learning with AI Focus</h3>
+            <p>Learning outside the classroom through hands-on engagement, technical competitions, hackathons and certifications.</p>
+            <details>
+              <summary>See the benefits <i data-feather="chevron-down"></i></summary>
+              <div class="pd-body">
+                <ul class="list-check list-check--plain">
+                  <li>Course exemption</li>
+                  <li>Grade upgradation — core and non-core</li>
+                  <li>Attendance relaxation and duty leaves</li>
+                  <li>Value addition in your academic transcript</li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <article class="pillar-card reveal reveal-delay-1">
+            <span class="p-num">Pillar 02</span>
+            <span class="pillar-icon"><i data-feather="trending-up"></i></span>
+            <h3>Student-Centric Revenue Generation</h3>
+            <p>Earn income during your studies and target generating at least 50% of your semester fee through approved work.</p>
+            <details>
+              <summary>Revenue avenues <i data-feather="chevron-down"></i></summary>
+              <div class="pd-body">
+                <ul class="list-check list-check--plain">
+                  <li>Industry and field consultancy projects</li>
+                  <li>Freelancing activities</li>
+                  <li>Paid internships</li>
+                  <li>Start-ups and entrepreneurial ventures</li>
+                  <li>University support via “Earn While You Learn” and publication or patent incentives</li>
+                </ul>
+                <p class="tiny mt-2">Submit a proposal covering revenue model, market feasibility, execution strategy and financial projections.</p>
+              </div>
+            </details>
+          </article>
+
+          <article class="pillar-card reveal">
+            <span class="p-num">Pillar 03</span>
+            <span class="pillar-icon"><i data-feather="briefcase"></i></span>
+            <h3>Career Pathways</h3>
+            <p>“Your journey, your choice: build, serve, or study for tomorrow.” Align your curriculum with where you actually want to go.</p>
+            <details>
+              <summary>Explore the pathways <i data-feather="chevron-down"></i></summary>
+              <div class="pd-body">
+                <ul class="list-check list-check--plain">
+                  <li>Corporate jobs — product and service companies</li>
+                  <li>Higher studies and study abroad</li>
+                  <li>Government jobs and public services</li>
+                  <li>Entrepreneurship and research</li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <article class="pillar-card reveal reveal-delay-1">
+            <span class="p-num">Pillar 04</span>
+            <span class="pillar-icon"><i data-feather="users"></i></span>
+            <h3>Students in Decision Making</h3>
+            <p>At least 20% of institutional ideas should originate directly from students across key committees.</p>
+            <details>
+              <summary>Meet the committees <i data-feather="chevron-down"></i></summary>
+              <div class="pd-body">
+                <ul class="list-check list-check--plain">
+                  <li><strong>Student Academic Advisory Committee</strong> — curriculum, teaching and evaluation methods.</li>
+                  <li><strong>Student Research and Innovation Committee</strong> — funding and real-world problems.</li>
+                  <li><strong>Student Career and Campus Connect Committee</strong> — internships, companies and social media.</li>
+                  <li><strong>Student Start-up Committee</strong> — entrepreneurial focus areas.</li>
+                </ul>
+              </div>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 CATEGORIES -->
+    <section class="section container" id="categories" aria-labelledby="categories-title">
+      <div class="section-head section-head--split">
+        <div>
+          <span class="eyebrow">Category explorer</span>
+          <h2 class="h2" id="categories-title">Nine ways to earn recognition</h2>
+          <p>Tap a category to see what it covers, what proof to upload, and a practical first step.</p>
+        </div>
+        <span class="pill pill--slate"><i data-feather="grid"></i> 9 categories</span>
+      </div>
+
+      <div data-tabs>
+        <div class="category-shell">
+          <div class="category-list" role="tablist" aria-label="EDU-Revolution categories" aria-orientation="vertical">
+            <button class="category-btn" type="button" role="tab" id="tab-cat-revenue" aria-controls="cat-revenue" aria-selected="true"><span class="cb-index">01</span> Revenue Generation</button>
+            <button class="category-btn" type="button" role="tab" id="tab-cat-projects" aria-controls="cat-projects" aria-selected="false"><span class="cb-index">02</span> Projects &amp; Hackathons</button>
+            <button class="category-btn" type="button" role="tab" id="tab-cat-internship" aria-controls="cat-internship" aria-selected="false"><span class="cb-index">03</span> Internship Opportunities</button>
+            <button class="category-btn" type="button" role="tab" id="tab-cat-mooc" aria-controls="cat-mooc" aria-selected="false"><span class="cb-index">04</span> NPTEL / SWAYAM / MOOCs</button>
+            <button class="category-btn" type="button" role="tab" id="tab-cat-grade" aria-controls="cat-grade" aria-selected="false"><span class="cb-index">05</span> Grade Upgradation</button>
+            <button class="category-btn" type="button" role="tab" id="tab-cat-rpl" aria-controls="cat-rpl" aria-selected="false"><span class="cb-index">06</span> Recognition of Prior Learning</button>
+            <button class="category-btn" type="button" role="tab" id="tab-cat-social" aria-controls="cat-social" aria-selected="false"><span class="cb-index">07</span> Social Media Presence</button>
+            <button class="category-btn" type="button" role="tab" id="tab-cat-community" aria-controls="cat-community" aria-selected="false"><span class="cb-index">08</span> Community Service</button>
+            <button class="category-btn" type="button" role="tab" id="tab-cat-co" aria-controls="cat-co" aria-selected="false"><span class="cb-index">09</span> Co-curricular &amp; Extra-curricular</button>
+          </div>
+
+          <div>
+            <div class="category-panel tab-panel" id="cat-revenue" role="tabpanel" aria-labelledby="tab-cat-revenue" tabindex="0">
+              <div class="cp-head">
+                <span class="pillar-icon" style="margin-bottom: 0"><i data-feather="trending-up"></i></span>
+                <div><span class="eyebrow">Category 01</span><h3>Revenue Generation</h3></div>
+              </div>
+              <p>Earn income through open projects, freelancing and start-up work. The framework encourages students to target at least 50% of their semester fee through legitimate, approved avenues.</p>
+              <ul class="list-check list-check--plain mt-3"><li>Industry or field consultancy</li><li>Freelance briefs and paid internships</li><li>Start-up revenue and product sales</li></ul>
+              <div class="cp-callout"><strong>Proposal checklist:</strong> revenue model, market feasibility, execution strategy and financial projections. <strong>First step:</strong> pick one paid brief and document the scope, deliverable and payment proof.</div>
+            </div>
+
+            <div class="category-panel tab-panel" id="cat-projects" role="tabpanel" aria-labelledby="tab-cat-projects" tabindex="0" hidden>
+              <div class="cp-head">
+                <span class="pillar-icon" style="margin-bottom: 0"><i data-feather="code"></i></span>
+                <div><span class="eyebrow">Category 02</span><h3>Projects &amp; Hackathons</h3></div>
+              </div>
+              <p>Standardised projects and hackathon builds give you hands-on experience and a portfolio of real-world problem solving.</p>
+              <ul class="list-check list-check--plain mt-3"><li>A working demo, live URL or GitHub repository</li><li>Problem statement, approach and impact</li><li>Team details and your specific contribution</li></ul>
+              <div class="cp-callout"><strong>First step:</strong> register a 24–48 hour build around a campus problem. A small, finished project beats a large, unfinished idea.</div>
+            </div>
+
+            <div class="category-panel tab-panel" id="cat-internship" role="tabpanel" aria-labelledby="tab-cat-internship" tabindex="0" hidden>
+              <div class="cp-head">
+                <span class="pillar-icon" style="margin-bottom: 0"><i data-feather="briefcase"></i></span>
+                <div><span class="eyebrow">Category 03</span><h3>Internship Opportunities</h3></div>
+              </div>
+              <p>Practical work experience taken outside regular academic requirements — national or international. It can complement attendance, learning and career outcomes.</p>
+              <ul class="list-check list-check--plain mt-3"><li>Offer letter and completion certificate</li><li>Supervisor contact and duration</li><li>Work summary, deliverables and skills gained</li></ul>
+              <div class="cp-callout"><strong>First step:</strong> speak to your mentor before accepting an internship that overlaps with classes. Get the academic fit approved early.</div>
+            </div>
+
+            <div class="category-panel tab-panel" id="cat-mooc" role="tabpanel" aria-labelledby="tab-cat-mooc" tabindex="0" hidden>
+              <div class="cp-head">
+                <span class="pillar-icon" style="margin-bottom: 0"><i data-feather="book-open"></i></span>
+                <div><span class="eyebrow">Category 04</span><h3>NPTEL / SWAYAM / MOOCs</h3></div>
+              </div>
+              <p>Online courses from top institutions offer quality learning that can map back to your programme outcomes.</p>
+              <ul class="list-check list-check--plain mt-3"><li>Verified certificate and assessment score</li><li>Course syllabus and duration</li><li>A short note connecting the course to a specific subject</li></ul>
+              <div class="cp-callout"><strong>First step:</strong> choose a course that fills a gap in your current semester, not a random certificate. Check the expert-defined options in UMS first.</div>
+            </div>
+
+            <div class="category-panel tab-panel" id="cat-grade" role="tabpanel" aria-labelledby="tab-cat-grade" tabindex="0" hidden>
+              <div class="cp-head">
+                <span class="pillar-icon" style="margin-bottom: 0"><i data-feather="award"></i></span>
+                <div><span class="eyebrow">Category 05</span><h3>Grade Upgradation (Core / Non-Core)</h3></div>
+              </div>
+              <p>A provision to improve previously earned grades through approved academic activities. If you re-register for a backlog or improvement, the “better grade shall prevail” rule applies.</p>
+              <ul class="list-check list-check--plain mt-3"><li>Map the activity to the course outcomes</li><li>Attach the project, exam or certification proof</li><li>Track the category in-charge approval</li></ul>
+              <div class="cp-callout"><strong>First step:</strong> ask the course faculty which outcome your activity demonstrates. Approval is stronger when the link is explicit.</div>
+            </div>
+
+            <div class="category-panel tab-panel" id="cat-rpl" role="tabpanel" aria-labelledby="tab-cat-rpl" tabindex="0" hidden>
+              <div class="cp-head">
+                <span class="pillar-icon" style="margin-bottom: 0"><i data-feather="refresh-cw"></i></span>
+                <div><span class="eyebrow">Category 06</span><h3>Recognition of Prior Learning (RPL)</h3></div>
+              </div>
+              <p>Course exemptions based on knowledge you already have from outside formal classrooms — work, certifications or self-directed learning.</p>
+              <ul class="list-check list-check--plain mt-3"><li>Certifications, portfolio and work samples</li><li>A skills-to-syllabus mapping</li><li>Assessment or interview if requested</li></ul>
+              <div class="cp-callout"><strong>First step:</strong> download the course syllabus and highlight the outcomes you can already evidence. Apply before the semester's add/drop window closes.</div>
+            </div>
+
+            <div class="category-panel tab-panel" id="cat-social" role="tabpanel" aria-labelledby="tab-cat-social" tabindex="0" hidden>
+              <div class="cp-head">
+                <span class="pillar-icon" style="margin-bottom: 0"><i data-feather="share-2"></i></span>
+                <div><span class="eyebrow">Category 07</span><h3>Social Media Presence</h3></div>
+              </div>
+              <p>Enhance academic visibility and professional networking by sharing what you learn and build — responsibly.</p>
+              <ul class="list-check list-check--plain mt-3"><li>Profile or channel links</li><li>Analytics or reach snapshot</li><li>A content plan tied to your discipline</li></ul>
+              <div class="cp-callout"><strong>First step:</strong> publish three posts about a project you completed. Quality and consistency matter more than follower count.</div>
+            </div>
+
+            <div class="category-panel tab-panel" id="cat-community" role="tabpanel" aria-labelledby="tab-cat-community" tabindex="0" hidden>
+              <div class="cp-head">
+                <span class="pillar-icon" style="margin-bottom: 0"><i data-feather="heart"></i></span>
+                <div><span class="eyebrow">Category 08</span><h3>Community Service</h3></div>
+              </div>
+              <p>Meaningful activities addressing social issues such as education, health and welfare — through NSS, NCC, Red Cross or your own initiative.</p>
+              <ul class="list-check list-check--plain mt-3"><li>Activity report with dates and hours</li><li>Photographs and organiser confirmation</li><li>Measurable impact on the community</li></ul>
+              <div class="cp-callout"><strong>First step:</strong> join one sustained drive rather than five one-day events. Depth and reflection are easier to evidence.</div>
+            </div>
+
+            <div class="category-panel tab-panel" id="cat-co" role="tabpanel" aria-labelledby="tab-cat-co" tabindex="0" hidden>
+              <div class="cp-head">
+                <span class="pillar-icon" style="margin-bottom: 0"><i data-feather="users"></i></span>
+                <div><span class="eyebrow">Category 09</span><h3>Co-curricular / Extra-curricular</h3></div>
+              </div>
+              <p>Activities that build professional skills through technical clubs, arts, culture and sports.</p>
+              <ul class="list-check list-check--plain mt-3"><li>Club membership or leadership proof</li><li>Event participation and achievement certificates</li><li>A reflection on the skills you developed</li></ul>
+              <div class="cp-callout"><strong>First step:</strong> register for one club during induction, then take a visible role in one event. Your contribution is the evidence.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTAL GUIDE -->
+    <section class="section bg-soft" id="portal-guide" aria-labelledby="guide-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <span class="eyebrow">Step-by-step portal guide</span>
+            <h2 class="h2" id="guide-title">Apply through UMS → LMS</h2>
+            <p>Seven steps from the dashboard to a tracked nomination. Open each step for the exact path and a practical tip.</p>
+          </div>
+          <div class="guide-actions no-print">
+            <button class="btn btn-outline btn-sm" type="button" id="expandGuide"><i data-feather="plus"></i> Expand all</button>
+            <button class="btn btn-outline btn-sm" type="button" id="collapseGuide"><i data-feather="minus"></i> Collapse all</button>
+          </div>
+        </div>
+
+        <div id="guideAccordion">
+          <details class="acc" open>
+            <summary><span class="acc-ico">1</span>Access the portal<span class="chev"><i data-feather="chevron-down"></i></span></summary>
+            <div class="acc-body">
+              <p>Log in to UMS and open <span class="path-code">UMS → LMS → EDU-Revolution: Be the Change</span>. You can also use the dashboard shortcut <strong>“Apply for EDU-Revolution”</strong>.</p>
+              <p class="tiny mt-2">Bookmark the page. You will return here to track approvals.</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary><span class="acc-ico">2</span>Choose a category<span class="chev"><i data-feather="chevron-down"></i></span></summary>
+            <div class="acc-body">
+              <p>Select from Revenue Generation, Projects &amp; Hackathons, Internships, MOOCs, RPL, Grade Upgradation, Social Media, Community Service or Co-curricular activities.</p>
+              <p class="tiny mt-2">Pick the category that matches your strongest proof, not the one that sounds most impressive.</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary><span class="acc-ico">3</span>Read and accept the undertaking<span class="chev"><i data-feather="chevron-down"></i></span></summary>
+            <div class="acc-body">
+              <p>Review the authenticity undertaking carefully, then click <strong>Accept &amp; Continue</strong>.</p>
+              <p class="tiny mt-2">False claims can invalidate a nomination and affect future applications.</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary><span class="acc-ico">4</span>Review expert-defined options<span class="chev"><i data-feather="chevron-down"></i></span></summary>
+            <div class="acc-body">
+              <p>Explore faculty-approved options for specific courses — for example, a Data Structures project mapped to <span class="path-code">CAP282</span> — or switch to the <strong>“Any Other”</strong> custom application tab.</p>
+              <p class="tiny mt-2">If an expert option fits, use it: the outcome mapping is already defined.</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary><span class="acc-ico">5</span>Fill details and upload proof<span class="chev"><i data-feather="chevron-down"></i></span></summary>
+            <div class="acc-body">
+              <p>Provide the project title, web or GitHub URL, supporting documents and a short description of your contribution. Save a draft if you need more time.</p>
+              <p class="tiny mt-2">Use descriptive file names and keep each proof easy to verify.</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary><span class="acc-ico">6</span>Review the Edu Rev Cart and submit<span class="chev"><i data-feather="chevron-down"></i></span></summary>
+            <div class="acc-body">
+              <p>Open the cart, review every item, edit or delete drafts, then click <strong>Final Submit</strong>.</p>
+              <p class="tiny mt-2">A submitted nomination cannot be edited freely — check dates and links before you submit.</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary><span class="acc-ico">7</span>Track your nomination<span class="chev"><i data-feather="chevron-down"></i></span></summary>
+            <div class="acc-body">
+              <p>Use the <strong>Track Nominations</strong> tab to follow statuses such as <em>Standing Committee Approval Pending</em> and <em>Category Incharge Approval</em>.</p>
+              <p class="tiny mt-2">If a nomination is returned, fix the specific evidence requested and resubmit quickly.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASSISTANCE -->
+    <section class="section container" aria-labelledby="assist-title">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Quick assistance</span>
+          <h2 class="h2 mt-1" id="assist-title">Stuck on a nomination?</h2>
+          <p class="lede mt-2">The EDU-Revolution assistance desk can help you choose a category, map an activity to a course outcome, or fix a rejected upload.</p>
+
+          <div class="assist-box mt-4">
+            <div class="ab-row">
+              <i data-feather="map-pin"></i>
+              <div><strong>Walk-in support</strong>Block 27, Room 102 — EDU-Revolution assistance zone.</div>
+            </div>
+            <div class="ab-row">
+              <i data-feather="monitor"></i>
+              <div><strong>RMS pathway</strong><span class="path-code">UMS → Relationship Management System → Edu-Revolution: Be the change</span></div>
+            </div>
+            <div class="ab-row">
+              <i data-feather="clock"></i>
+              <div><strong>Bring with you</strong>Your UMS registration number, the nomination reference, and screenshots of the error or pending status.</div>
+            </div>
+            <div class="ab-row">
+              <i data-feather="check-circle"></i>
+              <div><strong>Before you visit</strong>Re-check that your proof links open in a private window and that file sizes meet the portal limit.</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="stack">
+          <div class="card card-pad">
+            <span class="eyebrow">New-student starter plan</span>
+            <h3 class="h3 mt-1">Your first 30 days</h3>
+            <ol class="mt-3" style="display: grid; gap: 0.75rem">
+              <li class="flex gap-3"><span class="step-num">1</span><span class="small"><strong class="text-navy">Days 1–7:</strong> join a club, attend an induction workshop and note one skill gap.</span></li>
+              <li class="flex gap-3"><span class="step-num">2</span><span class="small"><strong class="text-navy">Days 8–15:</strong> start a small project or a short MOOC that maps to a current course.</span></li>
+              <li class="flex gap-3"><span class="step-num">3</span><span class="small"><strong class="text-navy">Days 16–30:</strong> finish the proof, save it to your portfolio, and submit one nomination.</span></li>
+            </ol>
+          </div>
+
+          <div class="card card-pad">
+            <h3 class="h3">Need a human?</h3>
+            <p class="small mt-1">Induction helpline for reporting questions; the EDU-Revolution desk for nomination help.</p>
+            <a class="btn btn-primary btn-block mt-3" href="tel:01824517170"><i data-feather="phone"></i> 01824-517170</a>
+            <a class="btn btn-outline btn-block mt-2" href="support.html#feedback"><i data-feather="message-circle"></i> Send a query</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container section--tight">
+      <div class="help-band">
+        <div class="help-band-inner">
+          <div>
+            <span class="eyebrow eyebrow--light">25th academic session</span>
+            <h2 class="mt-2">By the students, for the students.</h2>
+            <p>Start small, document everything, and use the approval workflow rather than waiting for perfect. Your first nomination is the hardest; the second is a habit.</p>
+          </div>
+          <div class="help-actions">
+            <a class="btn btn-primary" href="#portal-guide"><i data-feather="list"></i> Open portal guide</a>
+            <a class="btn btn-ghost" href="support.html#mentors"><i data-feather="users"></i> Meet your mentor</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img class="brand-logo" src="assets/img/lpu-logo.svg" alt="" width="198" height="120">
+            <span class="brand-text">
+              <span class="brand-title">LPU First 15</span>
+              <span class="brand-sub">Freshers' Guide</span>
+            </span>
+          </a>
+          <p class="footer-about">A student-first onboarding companion for LPU Freshers 2026 — schedule, campus navigation, reporting help and the EDU-Revolution, all in one place.</p>
+          <span class="footer-badge"><i data-feather="check-circle"></i> 50-50-50 · 4 pillars · 9 categories</span>
+        </div>
+        <div>
+          <p class="footer-head">Explore</p>
+          <div class="footer-links">
+            <a class="footer-link" href="index.html">Home</a>
+            <a class="footer-link" href="schedule.html">Induction schedule</a>
+            <a class="footer-link" href="map.html">Campus map</a>
+            <a class="footer-link" href="process.html">Reporting guide</a>
+            <a class="footer-link" href="support.html">Support &amp; helpdesk</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-head">On this page</p>
+          <div class="footer-links">
+            <a class="footer-link" href="edurev.html#formula">50-50-50 formula</a>
+            <a class="footer-link" href="edurev.html#categories">9 categories</a>
+            <a class="footer-link" href="edurev.html#portal-guide">Portal guide</a>
+            <a class="footer-link" href="edurev.html#assist-title">Assistance desk</a>
+            <a class="footer-link" href="support.html#mentors">Faculty mentors</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-head">Emergency numbers</p>
+          <div class="footer-contact">
+            <a href="tel:01824517170"><i data-feather="phone"></i> 01824-517170 · Induction</a>
+            <a href="tel:01824444079"><i data-feather="activity"></i> 01824-444079 · Hospital</a>
+            <a href="tel:01824444095"><i data-feather="shield"></i> 01824-444095 · Security</a>
+            <a href="tel:18001374422"><i data-feather="life-buoy"></i> 1800-137-4422 · Toll-free</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> LPU First 15 · Built for LPU Freshers' Onboarding. An independent student guide — not an official Lovely Professional University website. Confirm EDU-Revolution rules in UMS and with your category in-charge.</p>
+        <a class="back-top" href="#main"><i data-feather="arrow-up"></i> Back to top</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
